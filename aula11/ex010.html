@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>RADAR</h1>
+    <p>
+        Digite sua velocidade abaixo:
+    </p>
+    <input type="number" name="number" id="number">
+    <input type="button" value="Calcular" onclick="calcular()">
+    <div id="radar">
+        Multado ou Nao?
+    </div>
+
+    <script>
+        
+        
+        var limite = 50
+        
+        function calcular() {
+        var velocidade = window.document.querySelector('input#number')
+        var vel = Number(velocidade.value)
+        var radar = window.document.querySelector('div#radar')
+
+        radar.innerHTML = 'Sua velocidade atual e de: ' + vel + 'Km/h'
+        if (vel > 50){
+            radar.innerHTML += `<p>Voce esta <strong>multado</strong> por excesso de velocidade</p>`
+        }
+        radar.innerHTML += `<p>Diria sempre usando o <strong>cinto de segranca!</strong></p>`
+        }
+    </script>
+</body>
+</html>
