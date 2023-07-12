@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boas Vindas</title>
+    <style>
+        body, html {
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+            font-size: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            border: 1px solid rgba(28, 27, 27, 0.402);
+
+            width: 150px;
+            height: 50px;
+            
+            justify-content: center;
+            align-items: center;
+            display: flex;
+
+            margin-left: 48px;
+
+            cursor: pointer;
+        }
+
+        h1 {
+            margin-left: 40px;
+        }
+
+       
+    </style>
+</head>
+<body>
+    
+        <h1>Boas-vindas</h1>
+        <div onclick="desafio()">
+            Inicie o desafio
+        </div>
+    
+
+        <script>
+
+            let name 
+            let age 
+
+            function desafio() {
+                name = window.prompt('Qual o seu nome?')
+                age = window.prompt('Ola, ' + name + '! Quantos anos voce tem?')
+
+                window.alert('Acabei de conhecer o ' + name + ', que tem ' + age + ' anos de idade!' )
+            }
+        </script>
+</body>
+</html>
